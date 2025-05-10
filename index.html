@@ -6,32 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>App Sensei</title>
     <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/img/favicons/favicon.svg"
+    />
+    <link rel="shortcut icon" href="assets/img/favicons/favicon.ico" />
+    <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="assets/img/favicons/apple-touch-icon.png"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/img/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/img/favicons/favicon-16x16.png"
-    />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/img/favicons/favicon.ico"
-    />
-    <link rel="manifest" href="assets/img/favicons/manifest.json" />
-    <meta
-      name="msapplication-TileImage"
-      content="assets/img/favicons/mstile-150x150.png"
-    />
+    <meta name="apple-mobile-web-app-title" content="AppSensei" />
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest" />
     <meta name="theme-color" content="#ffffff" />
 
     <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
@@ -58,15 +50,21 @@
       data-exclusive="true"
     >
       <div class="fancynavbar-togglerbar" style="padding: 32px">
-        <img
-          class="fancynavbar-brand-img"
-          src="../assets/img/logo-sparrow-invert.svg"
-          alt=""
-          width="30"
-          height="30"
-          data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}'
-          data-zanim-trigger="scroll"
-        />
+        <div
+          class="fancynavbar-toggler fancynavbar-toggler-icon"
+          style="display: none"
+        ></div>
+        <a class="fancynavbar-brand" href="index.html"
+          ><img
+            class="fancynavbar-brand-img"
+            src="../assets/img/logo.svg"
+            alt=""
+            width="30"
+            height="30"
+            data-zanim-lg='{"from":{"opacity":0,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}'
+            style="transform: translate(0px, 0px); opacity: 1"
+          />
+        </a>
         <div
           class="fancynavbar-addon fancynavbar-addon-height"
           data-zanim-lg='{"from":{"opacity":1,"x":45},"to":{"opacity":1,"x":0},"ease":"CubicBezier","duration":0.8,"delay":0.4}'
@@ -110,7 +108,7 @@
               >
                 <div
                   class="bg-holder"
-                  style="background-image: url(../assets/img/signup.jpg)"
+                  style="background-image: url(../assets/img/home.png)"
                   data-zanim-trigger="scroll"
                   data-zanim-lg='{"animation":"slide-right","delay":0}'
                 ></div>
@@ -118,7 +116,8 @@
             </div>
             <div class="col-lg-8 mt-4 mt-lg-2">
               <h1 class="overflow-hidden mt-4 mb-4">
-                bereit für <br class="d-sm-none" /><span
+                bereit für <br class="d-sm-none" />
+                <span
                   class="typed-text fst-italic font-base fw-light"
                   data-typed-text='["konzept.","design.","entwicklung.","app."]'
                 ></span>
@@ -139,62 +138,6 @@
               <a class="btn btn-outline-dark rounded-pill mt-4" href="#!"
                 >Kosten berechnen</a
               >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Partners -->
-      <section class="text-center font-secondary pb-0" id="digitalPartners">
-        <div class="container">
-          <div class="row justify-content-center mb-6">
-            <div class="col-6 col-lg-3 d-flex flex-center">
-              <div
-                class="bg-light p-4 p-sm-6 h-100 rounded align-content-center"
-              >
-                <img
-                  class="logo-grid"
-                  src="../assets/logos/vattenfall.svg"
-                  alt=""
-                  data-zanim-xs='{"delay":0.1,"animation":"zoom-in"}'
-                  data-zanim-trigger="scroll"
-                />
-              </div>
-            </div>
-            <div class="col-6 col-lg-3 d-flex flex-center">
-              <div
-                class="bg-light p-4 p-sm-6 h-100 rounded align-content-center"
-              >
-                <img
-                  class="logo-grid"
-                  src="../assets/logos/eon.png"
-                  alt=""
-                  data-zanim-xs='{"delay":0.2,"animation":"zoom-in"}'
-                  data-zanim-trigger="scroll"
-                />
-              </div>
-            </div>
-            <div class="col-6 col-lg-3 d-flex flex-center mt-4 mt-lg-0">
-              <div class="bg-light p-4 p-sm-6 h-100 rounded">
-                <img
-                  class="logo-grid"
-                  src="../assets/logos/signal-iduna.png"
-                  alt=""
-                  data-zanim-xs='{"delay":0.3,"animation":"zoom-in"}'
-                  data-zanim-trigger="scroll"
-                />
-              </div>
-            </div>
-            <div class="col-6 col-lg-3 d-flex flex-center mt-4 mt-lg-0">
-              <div class="bg-light p-4 p-sm-6 h-100 rounded">
-                <img
-                  class="logo-grid"
-                  src="../assets/logos/ipoque.png"
-                  alt=""
-                  data-zanim-xs='{"delay":0.4,"animation":"zoom-in"}'
-                  data-zanim-trigger="scroll"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -224,7 +167,7 @@
                 <div class="col-lg-6 order-lg-2 text-center">
                   <img
                     class="img-fluid"
-                    src="../assets/img/illustration/process-01.svg"
+                    src="../assets/img/illustration/process-1.svg"
                     alt=""
                     width="400"
                   />
@@ -255,7 +198,7 @@
                 >
                   <img
                     class="img-fluid"
-                    src="../assets/img/illustration/process-02.svg"
+                    src="../assets/img/illustration/process-2.svg"
                     alt=""
                     width="400"
                   />
@@ -281,7 +224,7 @@
                 <div class="col-lg-6 order-lg-2 text-center align-self-center">
                   <img
                     class="img-fluid"
-                    src="../assets/img/illustration/process-03.svg"
+                    src="../assets/img/illustration/process-3.svg"
                     alt=""
                     width="400"
                   />
@@ -310,7 +253,7 @@
                 <div class="col-lg-6 border-end-lg text-center py-lg-8">
                   <img
                     class="img-fluid"
-                    src="../assets/img/illustration/process-04.svg"
+                    src="../assets/img/illustration/process-4.svg"
                     alt=""
                     width="400"
                   />
@@ -341,7 +284,7 @@
           <div class="row flex-center bg-dark rounded py-6 text-center">
             <div class="col-lg-7 text-lg-start ps-lg-5">
               <h3 class="mb-0 text-white">
-                Starten Sie Ihr nächstes Projekt mit AppSensei
+                Kostenlose und unverbindliche Erstberatung
               </h3>
             </div>
             <div class="col-lg-auto pe-lg-5 mt-4 mt-lg-0">
@@ -507,37 +450,38 @@
               <div
                 class="googlemap rounded"
                 data-gmap="data-gmap"
+                data-latlng="52.342061955216145, 9.764713912051198"
                 data-pov='{"heading":75,"pitch":0}'
                 data-scrollwheel="false"
-                data-icon="../assets/img/map-marker.png"
                 data-zoom="17"
                 data-theme="Default"
                 style="height: 21.88rem"
               >
-              <div
-                class="row align-items-center mb-8 mb-lg-3 text-center text-lg-start mt-4"
-              >
-                <div class="col-lg">
-                  <p class="mb-0">
-                    <span class="text-black fw-black">Adresse:</span
-                    ><span> XXXX X, XXXXX XXXXXX</span>
-                  </p>
-                  <p class="mb-0">
-                    <span class="text-black fw-black">E-Mail:</span
-                    ><span
-                      ><a class="text-body" href="mailto:xxxx@xxxxxxxx.xx">
-                        xxxx@xxxxxxxx.xx</a
-                      ></span
-                    >
-                  </p>
-                  <p class="mb-0">
-                    <span class="text-black fw-black">Telefonnumer:</span
-                    ><span
-                      ><a class="text-body" href="tel:+xxxxxxxxxxxxx">
-                        +xxxxxxxxxxxxx</a
-                      ></span
-                    >
-                  </p>
+                <div
+                  class="row align-items-center mb-8 mb-lg-3 text-center text-lg-start mt-4"
+                >
+                  <div class="col-lg">
+                    <p class="mb-0">
+                      <span class="text-black fw-black">Adresse: </span
+                      ><span>Fiedlerstraße 1, 30519 Hannover</span>
+                    </p>
+                    <p class="mb-0">
+                      <span class="text-black fw-black">E-Mail: </span
+                      ><span
+                        ><a class="text-body" href="mailto:info@appsensei.de">
+                          info@appsensei.de</a
+                        ></span
+                      >
+                    </p>
+                    <p class="mb-0">
+                      <span class="text-black fw-black">Telefonnumer: </span
+                      ><span
+                        ><a class="text-body" href="tel:+4915154940025">
+                          +4915154940025</a
+                        ></span
+                      >
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -559,13 +503,12 @@
                 ></span
               ></a> -->
               <div class="d-block mt-4 fs-10 fw-bold font-secondary">
-                <a
-                  class="mx-1 mx-sm-2 text-body"
-                  href="#imprintModal"
-                  data-bs-toggle="modal"
+                <a class="mx-1 mx-sm-2 text-body" href="impressum.html"
                   >Impressum
                 </a>
-                <a class="mx-1 mx-sm-2 text-body" href="#!">Datenschutz</a>
+                <a class="mx-1 mx-sm-2 text-body" href="datenschutz.html"
+                  >Datenschutz</a
+                >
               </div>
             </div>
           </div>
@@ -575,7 +518,7 @@
 
     <!-- Footer -->
     <footer
-      class="footer bg-black text-body-secondary py-4 font-secondary text-center overflow-hidden"
+      class="footer text-body-secondary py-4 font-secondary text-center overflow-hidden"
     >
       <div class="container">
         <div class="row align-items-center">
@@ -593,7 +536,7 @@
           </div>
           <div class="col-lg-4 text-lg-start mt-4 mt-lg-0">
             <p class="fs-10 text-uppercase ls fw-bold mb-0">
-              Copyright &copy; 2025 AppSensei
+              <!-- Copyright &copy; 2025 AppSensei -->
             </p>
           </div>
         </div>
@@ -641,62 +584,17 @@
       </div>
     </div>
 
-    <!-- Modal Imprint -->
-    <div class="overflow-hidden">
-      <div
-        class="modal fade fade-in"
-        id="imprintModal"
-        tabindex="-1"
-        role="dialog"
-        aria-hidden="true"
-      >
-        <div
-          class="modal-dialog modal-dialog-centered modal-xs mx-auto"
-          role="document"
-        >
-          <div class="modal-content">
-            <div class="modal-body text-center p-0">
-              <button
-                class="btn-close text-white position-absolute top-0 end-0 times-icon mt-2 me-2 p-0"
-                type="button"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-              <ul class="list-unstyled my-0 py-4 font-secondary">
-                <li>
-                  <a class="text-white fw-bold pt-1 d-block" href="#!"
-                    >Deutsch</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="pt-1 d-block text-body-tertiary"
-                    href="homes/default.html"
-                    >English</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- JavaScripts-->
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
     <script src="vendors/anchorjs/anchor.min.js"></script>
     <script src="vendors/is/is.min.js"></script>
-    <script src="vendors/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="vendors/isotope-packery/packery-mode.pkgd.min.js"></script>
-    <script src="vendors/fontawesome/all.min.js"></script>
     <script src="vendors/lodash/lodash.min.js"></script>
     <script src="vendors/imagesloaded/imagesloaded.pkgd.js"></script>
     <script src="vendors/gsap/gsap.js"></script>
     <script src="vendors/gsap/customEase.js"></script>
     <script src="assets/js/theme.js"></script>
-
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAMW2_uyXBfAaJCFKVtwySJyEW_JPpPjs&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzuVfZhYaifx7_nIZBppRFO1D8VPTFXQk&callback=initMap"
       async
     ></script>
     <script src="vendors/typed.js/typed.umd.js"></script>
