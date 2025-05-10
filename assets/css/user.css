@@ -1,2 +1,9 @@
 /* prettier-ignore */
 /*# sourceMappingURL=user.css.map */
+.fancynavbar-addon {
+  position: unset;
+}
+
+.fancynavbar-addon-height {
+  min-height: unset;
+}
